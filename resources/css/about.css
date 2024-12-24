@@ -1,0 +1,60 @@
+section.aboutUs-info {
+    text-align: center;
+}
+
+section.aboutUs-info h2,
+section.aboutUs-info .team h4 {
+    font-size: 32px;
+}
+
+section.aboutUs-info .body {
+    background: #fff;
+    padding: 64px 32px;
+}
+
+section.aboutUs-info .body .message {
+    background: var(--body-color);
+    padding: 32px 16px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    margin-bottom: 32px;
+    font-size: 18px;
+}
+
+section.aboutUs-info .body .message span {
+    font-weight: 900;
+}
+
+section.aboutUs-info .team .team-cards {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px;
+}
+
+section.aboutUs-info .team .team-cards .item img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+section.aboutUs-info .team .team-cards .item p {
+    font-size: 20px;
+}
+
+
+
+@media screen and (max-width: 480px) {
+    section.aboutUs-info .team .team-cards {
+        flex-direction: column;
+        gap: 16px;
+    }
+}

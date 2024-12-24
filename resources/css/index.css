@@ -1,0 +1,57 @@
+@import './navbar.css';
+@import './buttons.css';
+@import './hero.css';
+@import './services.css';
+@import './contactUs.css';
+@import './footer.css';
+@import './form.css';
+@import './transaction.css';
+@import './about.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Cairo", sans-serif;
+    scroll-behavior: smooth;
+    scroll-margin: 100px 0;
+    text-decoration: none !important;
+}
+
+:root {
+    --body-color: #EFFDF5;
+    --primary-color: #00B98E;
+    --primary-hover-color: #0eb38c;
+    --text-color: #0E2E50;
+    --dim-black: #0a0a0a;
+    --dim-white: #f5f5f5;
+    --dim-gray: #757474;
+}
+
+body {
+    background: var(--body-color);
+    overflow-x: hidden;
+    direction: rtl;
+}
+
+/* custom scrollbar  */
+::-webkit-scrollbar {
+    width: 10px;
+
+}
+
+::-webkit-scrollbar-track {
+    background: var(--text-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-hover-color);
+}

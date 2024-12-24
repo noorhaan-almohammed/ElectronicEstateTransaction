@@ -1,0 +1,37 @@
+section.start-transaction {
+    text-align: center;
+}
+
+section.start-transaction h2 {
+    font-size: 32px;
+}
+
+section.start-transaction .body {
+    background: #fff;
+    padding: 64px 32px;
+}
+
+section.start-transaction .body .form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+section.start-transaction .body .form .item {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+section.start-transaction .body .form form .btn-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+@media screen and (max-width: 480px) {
+    section.start-transaction .body {
+        padding: 32px;
+    }
+}

@@ -1,0 +1,19 @@
+ form input,
+ form textarea,
+ form select {
+     width: 300px;
+     background: var(--body-color);
+     border: none;
+     outline: none;
+     padding-inline: 16px;
+     padding-block: 8px;
+     border-radius: 8px;
+     -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+     -ms-border-radius: 8px;
+     -o-border-radius: 8px;
+ }
+
+ form select {
+     width: 330px;
+ }

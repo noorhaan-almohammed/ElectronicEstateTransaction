@@ -1,0 +1,103 @@
+section.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+section.hero .info {
+    padding-inline: 64px;
+    font-size: 32px;
+    color: var(--dim-black);
+}
+
+section.hero .info span {
+    color: var(--primary-color);
+}
+
+section.hero .info p {
+    font-size: 18px;
+    color: var(--dim-gray);
+    margin-top: 16px;
+}
+
+section.hero .info button {
+    font-size: 18px;
+    margin-top: 32px;
+}
+
+section.hero .slider, .info {
+    width: 50%;
+}
+
+section.hero .slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* transaction */
+
+section.transaction-hero {
+    background-image: url('../images/transaction-hero.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    z-index: 1;
+}
+
+section.transaction-hero .info {
+    background: #00000086;
+    padding-inline: 32px;
+    padding-block: 16px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    backdrop-filter: blur(12px);
+    text-align: center;
+    width: fit-content;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    z-index: 1;
+}
+
+section.transaction-hero .info h1 {
+    color: var(--dim-white);
+    font-size: 32px;
+}
+
+section.transaction-hero .info p {
+    color: var(--primary-color);
+    font-size: 20px;
+}
+
+/* about */
+section.transaction-hero.aboutUs {
+    background-image: url('../images/about-hero.jpg');
+}
+
+@media screen and (max-width: 480px) {
+    section.hero {
+        flex-direction: column-reverse;
+    }
+
+    section.hero .info {
+        width: 90%;
+        font-size: 24px;
+    }
+
+    section.hero .slider {
+        width: 100%;
+    }
+
+    section.transaction-hero .info {
+        padding-inline: 0px;
+        padding-block: 16px;
+    }
+}
