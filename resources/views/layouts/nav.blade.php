@@ -36,30 +36,31 @@
                         <a href="{{ url('/transaction') }}">الخدمات</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ url('/contact') }}">تواصل معنا</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="{{ url('/about') }}">من نحن</a>
+                        <a href="{{ route('about') }}">من نحن</a>
                     </li>
                 </ul>
             </div>
 
             <div class="sec-item">
                 @auth
-                    <a href="{{ url('/dashboard') }}" class="btn-primary">
-                        <i class='bx bx-user'></i>
-                        لوحة التحكم
-                    </a>
-                @else
-                    <a href="{{ route('login') }}" class="btn-primary">
-                        <i class='bx bx-user'></i>
-                        تسجيل دخول
-                    </a>
-                    <a href="{{ route('register') }}" class="btn-primary">
-                        <i class='bx bx-user'></i>
-                        مستخدم جديد
-                    </a>
-                @endauth
+                <a class="btn-primary" href="{{ route('logout') }}"
+                onclick="event.preventDefault();
+                              document.getElementById('logout-form').submit();">
+                 {{ __('تسجيل خروج') }}
+             </a>
+             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                @csrf
+            </form>
+            @else
+                <a href="{{ route('login') }}" class="btn-primary">
+                    <i class='bx bx-user'></i>
+                    تسجيل دخول
+                </a>
+                <a href="{{ route('register') }}" class="btn-primary">
+                    <i class='bx bx-user'></i>
+                    مستخدم جديد
+                </a>
+            @endauth
             </div>
         </div>
         </div>

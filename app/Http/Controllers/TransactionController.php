@@ -35,6 +35,7 @@ class TransactionController extends Controller
             'contact_method_id' => 'required|exists:contact_methods,id',
             'amount' => 'required|numeric|min:3',
             'stripeToken' => 'required|string',
+            'user_id' => 'exists:users,id'
         ]);
 
         try {

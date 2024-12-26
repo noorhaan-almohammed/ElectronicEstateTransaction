@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('required_documents');
             $table->float('cost');
             $table->foreignId('city_id')->constrained('cities');
+            $table->foreignId('user_id')->constrained('users');
             $table->foreignId('contact_method_id')->constrained('contact_methods');
             $table->timestamps();
         });

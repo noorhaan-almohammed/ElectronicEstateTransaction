@@ -48,10 +48,10 @@
                         <a href="{{ url('/transaction') }}">الخدمات</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ url('/contact') }}">تواصل معنا</a>
+                        <a href="#Contact-Us">تواصل معنا</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ url('/about') }}">من نحن</a>
+                        <a href="{{ route('about') }}">من نحن</a>
                     </li>
                 </ul>
             </div>
@@ -139,7 +139,7 @@
     </section>
 
     <!-- Contact us -->
-    <section class="Contact-Us">
+    <section class="Contact-Us" id="Contact-Us">
         <div class="header">
             <h2>تواصل معنا</h2>
             <p>اتصل بنا اليوم واترك لنا مهمة مساعدتك في إتمام معاملاتك العقارية بسهولة وأمان</p>

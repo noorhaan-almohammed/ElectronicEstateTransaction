@@ -88,7 +88,7 @@
 </section>
 <script src="https://js.stripe.com/v3/"></script>
 <script>
-    const stripe = Stripe('pk_test_51ONXM0DCnvSZulvvRJCUdzqajOBsSoeP1o25GSQctKDvEYf7dgTPJn6XlIGu4aLqjU8mKByPfK4UcCL673wCDwpX00bVUfXybD'); 
+    const stripe = Stripe('pk_test_51ONXM0DCnvSZulvvRJCUdzqajOBsSoeP1o25GSQctKDvEYf7dgTPJn6XlIGu4aLqjU8mKByPfK4UcCL673wCDwpX00bVUfXybD');
     const elements = stripe.elements();
     const cardElement = elements.create('card');
     cardElement.mount('#card-element');
@@ -118,12 +118,12 @@
                     alert('تم إرسال المعاملة والدفع بنجاح!');
                     window.location.href = '{{ route('home') }}';
                 } else {
-                    alert('فشلت العملية: ' + data.message);
+                    alert('حدث خطأ أثناء معالجة الطلب يرجى تسجيل الدخول أولا.');
                 }
             })
             .catch(error => {
                 console.error('Error:', error);
-                alert('حدث خطأ أثناء معالجة الطلب.');
+                alert('حدث خطأ أثناء معالجة الطلب يرجى تسجيل الدخول أولا.');
             });
         }
     });

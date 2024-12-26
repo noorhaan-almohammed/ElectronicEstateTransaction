@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AboutusController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
@@ -37,3 +38,4 @@ Route::post('/storeTransaction',[TransactionController::class,'store'])->name('s
 
 
 Route::post('/support', [SupportController::class, 'sendSupportMessage'])->name('sendSupportMessage');
+Route::get('/about',[AboutusController::class,'index'])->name('about');

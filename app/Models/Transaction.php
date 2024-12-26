@@ -13,7 +13,8 @@ class Transaction extends Model
                             'required_documents',
                             'cost',
                             'city_id',
-                            'contact_method_id'];
+                            'contact_method_id',
+                            'user_id'];
 
     public function user(){
         return $this->belongsTo(User::class);
