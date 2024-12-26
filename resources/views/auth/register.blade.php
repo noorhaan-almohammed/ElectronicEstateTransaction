@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+<link href='https://fonts.googleapis.com/css?family=Cairo' rel='stylesheet'>
 @vite(['resources/css/login.css'])
 <section class="aboutUs-info auth-section">
     <div class="container body">
@@ -9,7 +10,6 @@
                     <div class="card-header">
                         <h2>{{ __('مستخدم جديد') }}</h2>
                     </div>
-
                     <div class="card-body">
                         <form method="POST" action="{{ route('register') }}">
                             @csrf
@@ -67,7 +67,7 @@
                             <div class="row mb-0">
                                 <div class="col-md-6 offset-md-4">
                                     <button type="submit" class="btn btn-primary">
-                                        {{ __('Register') }}
+                                        {{ __('تأكيد') }}
                                     </button>
                                 </div>
                             </div>
